@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 6 Essentials</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+</head>
+
+<body>
+
+    <ul id="to_do_list"></ul>
+
+<form>
+
+    <input type="text" id="todo" name="to_do">
+    <button type="button" id="add" onClick=addList()>Add to List</button>
+
+</form>
+
+<script>
+
+    function addList(){
+        var val = $("#todo").val();
+        $('<li>' + val + '</li>').appendTo("to_do_list");
+    }
+
+
+</script>
+
+
+
+
+</body>
+</html>
